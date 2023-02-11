@@ -1,0 +1,3 @@
+module LeetCode_Longest_substring_without_repeating_characters_module
+
+go 1.20
