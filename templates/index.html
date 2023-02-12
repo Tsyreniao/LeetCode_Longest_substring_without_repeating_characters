@@ -1,0 +1,32 @@
+{{define "index"}}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>LeetCode_3</title>
+</head>
+<body>
+
+<h1>Задача с LeetCode</h1>
+<p>Описание: Given a string s, find the length of the longest substring without repeating characters.</p>
+
+<div>
+    <p>Введите строку</p>
+    <form action = "/save">
+        <input autocomplete="off" name = "Str">
+        <button type = "submit">submit</button>
+    </form>
+</div>
+
+{{if .IsExist}}
+<div>
+    <p>Строка: {{.Str}}</p>
+    <p>Ответ: {{.Answer}}</p>
+    <p>Длиной: {{.LenAnswer}}</p>
+</div>
+{{end}}
+
+</body>
+</html>
+
+{{end}}
